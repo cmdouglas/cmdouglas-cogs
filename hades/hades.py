@@ -16,12 +16,13 @@ class Hades(commands.Cog):
         title = character["name"]
         if character["title"]:
             title += ", " + character["title"]
-        quote = random.choice(character["quotes"])
+        quote = '*' + random.choice(character["quotes"]) + '*'
+        if character['name'] == 'Cerberus':
+            quote = '**Narrator:** ' + quote
         embed = discord.Embed(
-            title=title,
             description=quote,
         )
         embed.set_image(url=character["image"])
-        embed.set_author(name=character["name"])
+        embed.set_author(name=title)
 
         await ctx.send(embed=embed)

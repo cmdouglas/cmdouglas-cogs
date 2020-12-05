@@ -19,7 +19,7 @@ class Hades(commands.Cog):
         quote = random.choice(character["quotes"])
         embed = discord.Embed(
             title=title,
-            description=character["quote"],
+            description=quote,
         )
         embed.set_image(url=character["image"])
         embed.set_author(name=character["name"])

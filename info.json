@@ -1,0 +1,9 @@
+
+{
+    "author" : ["cmdouglas"],
+    "install_msg" : "Thanks for checking out my cogs!",
+    "name" : "cmdouglas-cogs",
+    "short" : "Cogs by cmdouglas inspired by many.",
+    "description" : "Cogs by cmdouglas inspired by many.",
+    "tags" : ["Fun"]
+}
